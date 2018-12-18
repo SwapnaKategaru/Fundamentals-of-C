@@ -1,0 +1,67 @@
+/* Linking to C library for (stdio)standard input and output function. */
+/* here h refers to header */
+#include<stdio.h>
+
+/* Linking to c library for (conio)console input and output function. */
+#include<conio.h>
+
+/* We are using void function here since we are not returning and storing value of sum */
+/* Every c program has this part function called main(), this part is enclosed with curly braces which includes all executable part of the program  */
+void main()
+{
+
+/* Initializing variables to integers */
+/* Here a and b are our variables which we use to add two numbers and storing them in variable called 'sum' */
+int a,b,sum;
+
+/* This fucntion helps in clearing the screen from previous output of programs, let's focus in current program output by clearing previous history  */
+clrscr();
+
+/* printf stands for 'print formatted' fucntion.
+   It mainly refers to output library functions in C.
+   They are complementary to scanf functions by copying their functions in output
+   When compiler executes this line it will literally just prints what mentioned inside quote's in output screen. */
+/* Syntax : printf("control string", list of parameters); */
+printf("enter value for a\n");
+
+/* 'scanf' stands for 'scan formatted' function.
+    This function is used by compiler to read and write output in specific format
+    Here %d refers to format descriptor for variable using int. */
+/* '&a' is a parameter, when compiler executes this line of code it searches it's origin in above program or initialization. */
+/* Syntax : scanf("control string", list of parameters);  */
+scanf("%d", &a);
+
+/* This prints second variable value to the compiler. */
+printf("enter value for b\n");
+
+/* This reads second value for variable 'b' */
+scanf("%d", &b);
+
+/* At this point compiler will add values of the two variables and stores in variable called 'sum' */
+sum = a + b;
+
+/* First parameter will descripts value for integer variable and second paramter will return value stored in it */
+printf("sum of given values %d\n", sum);
+
+/* getch means get character from function, which refers to non-standard library <conio.h> */
+getch();
+}
+
+
+================================================================================================================================================================================================================================================================================
+
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a,b,sum;
+clrscr();
+printf("enter value for a\n");
+scanf("%d", &a);
+printf("enter value for b\n");
+scanf("%d", &b);
+sum = a + b;
+printf("sum of given values %d\n", sum);
+getch();
+}
