@@ -1,0 +1,16 @@
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+char ch;
+int rank = 1;
+int tm = 600;
+float avg = 60;
+clrscr();
+printf("enter gender, rank, tm, avg of a student\n");
+scanf("%c %d %d %f", &ch, &rank, &tm, &avg);
+printf("The details of a student are\n");
+printf("%c\t %d\t %d\t %f", ch, rank, tm, avg);
+getch();
+}
