@@ -1,0 +1,36 @@
+/* header file to perform standard input output functions */
+   #include<stdio.h>
+/* source file to console input output functions */
+   #include<conio.h>
+/* main function of program that returns nothing (due to void) */
+   void main()
+/* beginning of program */
+   {           
+/* declaration of variables - (n)number ,(i=1)i initialised to 1 for iteration in loop ,(sum=0)sum holds the dividend values */
+   int n ,i = 1 ,sum = 0;
+/* output statement where user enters a number */
+   printf("Enter a number ");
+/* input statement to read and store the given value */
+   scanf("%d", &n);
+/* loop to iterate(i) till the condition satisfies */
+   while(i<n)
+      {
+    /* conditional statement to check the modulus value of given number and dividend is equal to 0 or not */
+       if(n % i == 0)
+    /* sum here updates and stores current value everytime the loop iterates ,only when the above condition is true */  
+       sum = sum + i;
+    /* increment of i value by 1 */
+       i++;
+      }
+    /* if statement to check equality of given number and sum value */
+       if(sum == n)
+    /* output statement to print the true statement block */ 
+       printf("%d is a perfect number",i);
+    /* else statement if the above condition is false */
+       else
+    /* print statement that prints false statement block */
+       printf("%d is not a perfect number",i);
+/* get character function to display the result or output */
+   getch();
+/* end of the program */ 
+   }
